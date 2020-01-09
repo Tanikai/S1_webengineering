@@ -1,3 +1,52 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	margin-top: 50px; /* Darüber könnte z.B. noch das Banner eingefügt werden*/
+	background-color: grey; /* Zwischenhalter für Farbe */
+	height: 50px;
+}
+
+header > nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 50px;
+}
+
+header > nav > a {
+	display: inline-block;
+	color: red !important;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	margin-right: 2vw;
+
+	transition: 0.3s; /* Animation */
+}
+
+header > nav > a:hover {
+	color: white !important;
+}
+
 h1 {
 	color: #ff0000;
 }
