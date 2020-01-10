@@ -23,7 +23,7 @@ header {
 	margin-top: 50px; /* Darüber könnte z.B. noch das Banner eingefügt werden*/
 	margin-left: auto;
 	margin-right: auto;
-	background-color: grey; /* Zwischenhalter für Farbe */
+	background-color: #0098D4; /* Zwischenhalter für Farbe */
 	height: 50px;
 	width: 80%;
 }
@@ -37,7 +37,7 @@ header > nav {
 
 header > nav > a {
 	display: inline-block;
-	color: red !important;
+	color: white !important;
 	text-transform: uppercase;
 	text-decoration: none;
 
@@ -48,6 +48,15 @@ header > nav > a {
 
 header > nav > a:hover {
 	color: white !important;
+	font-weight: bolder;
+}
+
+#wrapper {
+	width: 80%;
+	height: 2000px; /* Temporäre Breite */
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
 }
 
 h1 {
