@@ -44,11 +44,29 @@ header > nav > a {
 	margin-right: 2vw;
 
 	transition: 0.3s; /* Animation */
+
 }
 
 header > nav > a:hover {
 	color: white !important;
 	font-weight: bolder;
+}
+
+h1 {
+	color: #ff0000;
+}
+
+#MenuBackground {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+}
+
+#MenuBackgroundDiv {
+	width: 80%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #wrapper {
@@ -59,6 +77,16 @@ header > nav > a:hover {
 	background-color: #f1f1f1;
 }
 
-h1 {
-	color: #ff0000;
+
+/* Animationen */
+@-webkit-keyframes zoomout {
+	0% {transform: scale(1);}
+	50% {transform: scale(0.67);}
+	100% {transform: scale(1);}
+}
+
+@keyframes zoomout {
+	  0% {transform: scale(1);}
+	50% {transform: scale(0.67);}
+	100% {transform: scale(1);}
 }
