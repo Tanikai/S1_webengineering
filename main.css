@@ -20,7 +20,6 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	margin-top: 50px; /* Darüber könnte z.B. noch das Banner eingefügt werden*/
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #0098D4; /* Zwischenhalter für Farbe */
@@ -60,11 +59,14 @@ h1 {
 	height: 100%;
 	width: auto;
 	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-animation: zoomout 10s ease-in infinite;
 }
 
 #MenuBackgroundDiv {
 	width: 80%;
-	height: 20%;
+	height: 15vh;
 	margin-left: auto;
 	margin-right: auto;
 }
