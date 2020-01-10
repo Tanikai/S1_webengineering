@@ -21,8 +21,11 @@ header {
 	position: sticky;
 	top: 0;
 	margin-top: 50px; /* Darüber könnte z.B. noch das Banner eingefügt werden*/
+	margin-left: auto;
+	margin-right: auto;
 	background-color: grey; /* Zwischenhalter für Farbe */
 	height: 50px;
+	width: 80%;
 }
 
 header > nav {
