@@ -102,3 +102,52 @@ h1 {
 	50% {transform: scale(0.67);}
 	100% {transform: scale(1);}
 }
+
+/* 
+	Breakpoints
+*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+}
+ 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+	header {
+		width: 90%;
+	}
+
+	footer {
+		width: 90%;
+	}
+
+	#wrapper {
+		width: 90%;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	header {
+		width: 95%;
+	}
+
+	footer {
+		width: 95%;
+	}
+
+	#wrapper {
+		width: 95%;
+	}
+}
