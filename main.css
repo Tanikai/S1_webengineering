@@ -20,7 +20,6 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	margin-left: auto;
 	background-color: #0098D4; /* Zwischenhalter für Farbe */
 	height: 50px;
 	width: 80%;
@@ -70,19 +69,12 @@ h1 {
 }
 
 #MenuBackground {
-	width: 100%;
-	height: auto;
-
+	height: 100%;
+	width: auto;
 	overflow: hidden;
-	align-self: center;
-
 	margin-left: auto;
 	margin-right: auto;
-
-	-webkit-animation: zoomoutFull 10s ease-in;
-	animation: zoomoutFull 10s ease-in;
-
-	z-index: -1000;
+	-webkit-animation: zoomout 10s ease-in infinite;
 }
 
 #MenuBackgroundDiv {
@@ -90,7 +82,6 @@ h1 {
 	height: 15vh;
 	margin-left: auto;
 	margin-right: auto;
-	display: flex;
 }
 
 #logo {
