@@ -104,6 +104,26 @@ h1 {
 	background-color: #f1f1f1;
 }
 
+#portrait {
+
+	text-align: center;
+
+}
+
+#portrait h1 {
+	
+	font-size: 6vw;
+
+}
+
+#portrait img {
+
+	max-width: 100%;
+	width: 30%;
+	border-radius: 50%;
+
+}
+
 /* Animationen */
 @-webkit-keyframes zoomout {
 	0% {transform: scale(1);}
@@ -205,6 +225,7 @@ h1 {
 	#MenuBackgroundDiv {
 		width: 90%;
 	}
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -224,4 +245,5 @@ h1 {
 	#MenuBackgroundDiv {
 		width: 95%;
 	}
+
 }
