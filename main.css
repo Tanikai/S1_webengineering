@@ -16,6 +16,10 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 }
 
+body {
+	font-family: "Didact Gothic";
+}
+
 header {
 	position: -webkit-sticky;
 	position: sticky;
@@ -71,15 +75,12 @@ footer a {
 	text-decoration: none;
 }
 
-
 h1 {
-	font-family: 'Didact Gothic';
 	font-size: 40px;
 	color: black;
 }
 
 p {
-	font-family: 'Didact Gothic';
 	font-size: 25px;
 	color: black;
 }
