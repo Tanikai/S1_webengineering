@@ -104,6 +104,7 @@ p {
 	animation: zoomoutFull 2s ease-out; */
 
 	z-index: -1000;
+	filter: brightness(70%); /* Reduzierung der Helligkeit des Backgrounds um 30%, damit Portrait und Heading darunter deutlicher sichtbar werden. */
 }
 
 #MenuBackgroundDiv {
