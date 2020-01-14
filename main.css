@@ -157,7 +157,7 @@ p {
 }
 
 #portrait img {
-	margin-top: 1%;
+	margin-top: 3%;
 	height: 75%;
 	max-height: 25vw;
 	border-radius: 50%;
@@ -280,20 +280,4 @@ p {
 		height: 60vh;
 		max-height: none;
 	}
-
-	#portrait {
-		margin-top: 10vh;
-		width: 100%;
-		font-size: 25px;
-	}
-
-	#portrait img {
-		max-height: 75vw;
-		max-width: 75vw;
-	}
-
-	#portrait h1 {
-		font-size: 10vw;
-	}
-
 }
