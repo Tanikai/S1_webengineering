@@ -95,7 +95,7 @@ p {
 	height: auto;
 	
 	overflow: hidden;
-	align-self: center;
+	object-fit: cover;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -107,10 +107,12 @@ p {
 	filter: brightness(70%); /* Reduzierung der Helligkeit des Backgrounds um 30%, damit Portrait und Heading darunter deutlicher sichtbar werden. */
 }
 
-#MenuBackgroundDiv {
+#banner {
 	position: relative;
 	width: 80%;
 	height: 60vh;
+	min-height: 300px;
+	max-height: 40vw;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -134,18 +136,19 @@ p {
 
 #portrait {
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	text-align: center;
-	margin-top: 5%;
 }
 
 #portrait h1 {
 	color: white;	
-	font-size: 6vw;
 	text-shadow: 3px 3px 10px black;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 8vh;
 	/*
 	Das hier wäre die Umrandung	
 	-webkit-text-stroke-color: black;
@@ -154,8 +157,9 @@ p {
 }
 
 #portrait img {
-	/* max-width: 25%; */
-	width: 20%;
+	margin-top: 3%;
+	height: 75%;
+	max-height: 25vw;
 	border-radius: 50%;
 }
 
@@ -228,57 +232,52 @@ p {
 	Breakpoints
 */
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1680px) {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (max-width: 1080px) {
 
 }
  
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 767px) and (min-width: 600px) {
+@media only screen and (max-width: 840px) {
 	header {
-		width: 90%;
+		width: 95%;
 	}
 
 	footer {
-		width: 90%;
+		width: 95%;
 	}
 
 	#wrapper {
-		width: 90%;
+		width: 95%;
 	}
 
-	#MenuBackgroundDiv {
-		width: 90%;
+	#banner {
+		width: 95%;
+		max-height: none;
 	}
 
+	#portrait {
+		margin-top: 5vh;
+		width: 100%;
+		font-size: 25px;
+	}
+
+	#portrait img {
+		max-height: 75vw;
+		max-width: 75vw;
+	}
+
+	#portrait h1 {
+		font-size: 10vw;
+	}
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	header {
-		width: 95%;
+@media only screen and (max-width: 736px) {
+	#banner {
+		height: 60vh;
+		max-height: none;
 	}
-
-	footer {
-		width: 95%;
-	}
-
-	#wrapper {
-		width: 95%;
-	}
-
-	#MenuBackgroundDiv {
-		width: 95%;
-	}
-
 }
