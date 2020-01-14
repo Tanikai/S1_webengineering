@@ -95,7 +95,7 @@ p {
 	height: auto;
 	
 	overflow: hidden;
-	align-self: center;
+	object-fit: cover;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -112,6 +112,7 @@ p {
 	width: 80%;
 	height: 60vh;
 	min-height: 300px;
+	max-height: 40vw;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -140,14 +141,14 @@ p {
 	top: 0;
 	left: 0;
 	text-align: center;
-	margin-top: 5%;
 }
 
 #portrait h1 {
 	color: white;	
-	font-size: 6vw;
 	text-shadow: 3px 3px 10px black;
-	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 8vh;
 	/*
 	Das hier wäre die Umrandung	
 	-webkit-text-stroke-color: black;
@@ -156,9 +157,9 @@ p {
 }
 
 #portrait img {
-	/* max-width: 25%; */
-	/* height: 80%; */
-	width: 20%;
+	margin-top: 1%;
+	height: 75%;
+	max-height: 25vw;
 	border-radius: 50%;
 }
 
@@ -261,13 +262,29 @@ p {
 	}
 
 	#MenuBackground {
-		
+		height: 100%;
+		width: auto;
 	}
 
 	#banner {
 		width: 90%;
+		max-height: none;
 	}
 
+	#portrait {
+		margin-top: 5vh;
+		width: 100%;
+		font-size: 25px;
+	}
+
+	#portrait img {
+		max-height: 75vw;
+		max-width: 75vw;
+	}
+
+	#portrait h1 {
+		font-size: 10vw;
+	}
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -285,13 +302,29 @@ p {
 	}
 
 	#MenuBackground {
-		height: 100%;
-		width: 1000px;
+		width: auto;
+		object-fit: cover;
 	}
 
 	#banner {
-		height: 80vh;
+		height: 60vh;
 		width: 95%;
+		max-height: none;
+	}
+
+	#portrait {
+		margin-top: 10vh;
+		width: 100%;
+		font-size: 25px;
+	}
+
+	#portrait img {
+		max-height: 75vw;
+		max-width: 75vw;
+	}
+
+	#portrait h1 {
+		font-size: 10vw;
 	}
 
 }
