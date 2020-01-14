@@ -16,6 +16,14 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: "Didact Gothic";
 }
@@ -127,11 +135,7 @@ p {
 	width: 80%;
 	height: 2000px; /* Temporäre Breite */
 	background-color: #f1f1f1;
-}
-
-#textwrapper {
-	margin-left: 5%;
-	margin-right: 5%;
+	padding: 5%;
 }
 
 #portrait {
