@@ -259,12 +259,13 @@ p {
 	}
 
 	#portrait {
-		margin-top: 5vh;
+		margin-top: 2vh;
 		width: 100%;
 		font-size: 25px;
 	}
 
 	#portrait img {
+		margin-top: 0%;
 		max-height: 75vw;
 		max-width: 75vw;
 	}
