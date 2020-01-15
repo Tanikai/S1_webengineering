@@ -33,7 +33,7 @@ header {
 	position: sticky;
 	top: 0;
 	background-color: #0098D4; /* Zwischenhalter für Farbe */
-	height: 50px;
+	height: 60px;
 	width: 80%;
 }
 
@@ -41,7 +41,7 @@ header > nav {
 	position: absolute;
 	top: 0;
 	right: 0;
-	line-height: 50px;
+	line-height: 60px;
 	height: 100%;
 	width: 75%;
 }
@@ -133,7 +133,6 @@ p {
 
 #wrapper {
 	width: 80%;
-	height: 2000px; /* Temporäre Breite */
 	background-color: #f1f1f1;
 	padding: 5%;
 }
