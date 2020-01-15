@@ -166,6 +166,63 @@ p {
 	border-radius: 50%;
 }
 
+/* 
+	Breakpoints
+*/
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+}
+ 
+@media only screen and (max-width: 840px) {
+	header {
+		width: 95%;
+	}
+
+	footer {
+		width: 95%;
+	}
+
+	#wrapper {
+		width: 95%;
+	}
+
+	#banner {
+		width: 95%;
+		max-height: none;
+	}
+
+	#portrait {
+		margin-top: 2vh;
+		width: 100%;
+		font-size: 25px;
+	}
+
+	#portrait img {
+		margin-top: 0%;
+		max-height: 75vw;
+		max-width: 75vw;
+	}
+
+	#portrait h1 {
+		font-size: 10vw;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 736px) {
+	#banner {
+		height: 60vh;
+		max-height: none;
+	}
+}
+
+
+
 /* Animationen */
 @-webkit-keyframes zoomout {
 	0% {transform: scale(1);}
@@ -228,60 +285,5 @@ p {
 		/* transition: 2s all; */
 		width: 100%;
 		height: auto;
-	}
-}
-
-/* 
-	Breakpoints
-*/
-
-@media only screen and (max-width: 1680px) {
-
-}
-
-@media only screen and (max-width: 1080px) {
-
-}
- 
-@media only screen and (max-width: 840px) {
-	header {
-		width: 95%;
-	}
-
-	footer {
-		width: 95%;
-	}
-
-	#wrapper {
-		width: 95%;
-	}
-
-	#banner {
-		width: 95%;
-		max-height: none;
-	}
-
-	#portrait {
-		margin-top: 2vh;
-		width: 100%;
-		font-size: 25px;
-	}
-
-	#portrait img {
-		margin-top: 0%;
-		max-height: 75vw;
-		max-width: 75vw;
-	}
-
-	#portrait h1 {
-		font-size: 10vw;
-	}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 736px) {
-	#banner {
-		height: 60vh;
-		max-height: none;
 	}
 }
