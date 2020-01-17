@@ -40,15 +40,16 @@ header {
 footer {
 	height: 30px;
 	width: 100%;
-	line-height: 30px;
+	line-height: 25px;
 	background-color: #242038;
+	padding: 0 15px;
 
 	/* color: white !important; */
 	text-decoration: none;
 }
 
 footer > p {
-	margin: 0 15px 0 15px;
+	margin-left: 50px;
 	color: white;
 	display: inline;
 	text-decoration: none;
@@ -85,7 +86,7 @@ p {
 
 #content {
 	width: 100%;
-	background-color: #f1f1f1;
+	background-color: #ffffff;
 	padding: 5%;
 }
 
@@ -96,12 +97,11 @@ p {
 
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
-	  -webkit-user-select: none; /* Safari */
-	   -khtml-user-select: none; /* Konqueror HTML */
-		 -moz-user-select: none; /* Old versions of Firefox */
-		  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
-									supported by Chrome, Opera and Firefox */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
   }
 
 /* Banner mit Landschaft und Portrait */
@@ -190,6 +190,8 @@ p {
 #navigation > ul > li {
 	display: inline-block;
 	margin-right: 25px;
+	font-size: 1.2em;
+	letter-spacing: 1px;
 }
 
 #navigation > ul > li > a {
