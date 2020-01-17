@@ -126,6 +126,8 @@ p {
 
 	z-index: -1000;
 	filter: brightness(70%); /* Reduzierung der Helligkeit des Backgrounds um 30%, damit Portrait und Heading darunter deutlicher sichtbar werden. */
+	transition: filter 0.7s ease-in-out;
+	filter: blur(5px);
 }
 
 #banner {
@@ -137,6 +139,11 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
+	overflow: hidden;
+}
+
+#banner:hover #MenuBackground {
+	filter: blur(0);
 }
 
 #logo {
