@@ -37,7 +37,11 @@ header {
 	width: 100%;
 }
 
-header > nav {
+#navigation label, #hamburger {
+	display: none; /* In der normalen Ansicht soll das Hamburgericon nicht angezeigt werden */
+}
+
+#navigation {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -46,16 +50,25 @@ header > nav {
 	width: 75%;
 }
 
-header > nav > a {
+#navigation > ul {
+	list-style-type: none;
+	float: right;
+}
+
+#navigation > ul > li {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+#navigation > ul > li > a {
 	color: white !important;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-right: 5%;
 	transition: 0.3s; /* Animation */
 	float: right;
 }
 
-header > nav > a:hover {
+#navigation > a:hover {
 	color: lightgray !important;
 }
 
@@ -201,6 +214,31 @@ p {
 	#banner {
 		/* width: 95%; */
 		max-height: none;
+	}
+
+	#navigation label {
+		display: block;
+		margin-left: 90%;
+	}	
+
+	#navigation ul {
+		display: none;
+		background-color: #0098D4;
+		width: 300px;
+	}
+
+	#navigation input:checked ~ ul {
+		display: block;
+	}
+
+	#navigation ul li {
+		display: block;
+		margin: 0;
+	}
+
+	#navigation ul li a {
+		width: 300px;
+		text-align: center;
 	}
 
 	#portrait {
