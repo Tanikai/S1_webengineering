@@ -41,7 +41,7 @@ footer {
 	height: 30px;
 	width: 100%;
 	line-height: 30px;
-	background-color: #051923;
+	background-color: #242038;
 
 	/* color: white !important; */
 	text-decoration: none;
@@ -94,6 +94,16 @@ p {
 	margin-right: auto;
 }
 
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Opera and Firefox */
+  }
+
 /* Banner mit Landschaft und Portrait */
 #MenuBackground {
 	width: 100%;
@@ -139,7 +149,7 @@ p {
 
 #portrait h1 {
 	color: white;	
-	text-shadow: 3px 3px 10px black;
+	text-shadow: 3px 3px 10px #242038;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 8vh;
@@ -273,18 +283,20 @@ p {
 
 	#navigation ul {
 		display: none;
-		background-color: #0098D4;
+		background-color: #725ac1;
 		width: 300px;
 	}
 
 	#navigation ul li {
 		display: block;
 		margin: 0;
+		
 	}
 
 	#navigation ul li a {
 		width: 300px;
 		text-align: center;
+		border-top: 1px solid #242038;
 	}
 
 	#navigation label {
