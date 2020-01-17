@@ -239,8 +239,17 @@ p {
 	margin-top: 8px;
 }
 
+#IMGeugenG20 {
+	transform-origin: 95% 50%;
+  	transition: transform 1s, filter .5s ease-out;
+}
+
 .galleryGraphic:hover {
 	transform: scale(1.2);
+}
+
+#IMGeugenG20:hover {
+	transform: scale(5);
 }
 
 /*
