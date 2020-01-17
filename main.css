@@ -228,14 +228,19 @@ p {
 }
   
 .column img {
-	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
 	transition: transform .5s ease;	
+	overflow: hidden;
 }
 
-.column:hover img {
-	transform: scale(1.5);
+.galleryGraphicDiv {
+	overflow: hidden;
+	margin-top: 8px;
+}
+
+.galleryGraphic:hover {
+	transform: scale(1.2);
 }
 
 /*
