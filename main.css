@@ -230,6 +230,7 @@ p {
 	flex-wrap: wrap;
 	padding: 0 4px;
 	overflow: hidden;
+	margin: auto;
 }
   
 .column {
