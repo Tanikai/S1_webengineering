@@ -26,6 +26,7 @@ html {
 
 body {
 	font-family: "Didact Gothic";
+	font-size: 16px;
 }
 
 header {
@@ -62,14 +63,46 @@ footer a {
 	text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #242038;
+	font-weight: 700;
+	line-height: 1em;
+	margin: 0 0 0.5625em 0;
+}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		border: 0;
+		color: inherit;
+		text-decoration: none;
+	}
+
 h1 {
-	font-size: 40px;
-	color: black;
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+h6 {
+	font-size: 0.7em;
 }
 
 p {
-	font-size: 25px;
-	color: black;
+	font-size: 1.2em;
+	margin: 0 0 2.25em 0;
 }
 
 /*
