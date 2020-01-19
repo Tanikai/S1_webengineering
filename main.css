@@ -231,12 +231,20 @@ p {
 	color: white !important;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: 0.3s; /* Animation */
 	float: right;
+
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
 }
 
-#navigation > a:hover {
-	color: lightgray !important;
+#navigation > ul > li > a:hover{
+	-webkit-transform: translateY(-0.1em);
+	-moz-transform: translateY(-0.1em);
+	-o-transform: translateY(-0.1em);
+	-ms-transform: translateY(-0.1em);
+	transform: translateY(-0.1em);
 }
 
 /* Hamburgericon */
@@ -326,13 +334,22 @@ p {
 	#navigation ul li {
 		display: block;
 		margin: 0;
-		
+		height: 60px;
+		border-top: 1px solid #242038;
 	}
 
 	#navigation ul li a {
 		width: 300px;
 		text-align: center;
-		border-top: 1px solid #242038;
+		
+	}
+
+	#navigation > ul > li > a:hover{
+		-webkit-transform: translateX(1em);
+		-moz-transform: translateX(1em);
+		-o-transform: translateX(1em);
+		-ms-transform: translateX(1em);
+		transform: translateX(1em);
 	}
 
 	#navigation label {
@@ -378,7 +395,7 @@ p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 736px) {
 	#banner {
-		height: 60vh;
+		height: 50vh;
 		max-height: none;
 	}
 }
