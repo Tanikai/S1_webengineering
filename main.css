@@ -9,6 +9,8 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+	/* Für alle Elemente zunächst margin, padding, border auf 0 setzen (da es einige Standardwerte gibt)
+	und die Schriftart für alle Elemente übernehmen */
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -17,10 +19,12 @@ section, summary, time, mark, audio, video {
 }
 
 html {
-	box-sizing: border-box; /* Dadurch verändert "Padding" nicht die Elementgröße */
+	/* Dadurch hat die "Padding"-Eigenschaft keinen Einfluss auf die Gesamtgröße des Elements */
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
+	/* border-box für alle Elemente übernehmen */
 	box-sizing: inherit;
 }
 
@@ -30,6 +34,7 @@ body {
 }
 
 header {
+	/* Header immer oben anzeigen */
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -44,8 +49,6 @@ footer {
 	line-height: 25px;
 	background-color: #242038;
 	padding: 0 15px;
-
-	/* color: white !important; */
 	text-decoration: none;
 }
 
@@ -60,12 +63,12 @@ footer > p {
 footer a {
 	color: white;
 	display: inline;
-	text-decoration: none;
+	text-decoration: none; /* Strich unter dem Link ausblenden */
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #242038;
-	font-weight: 700;
+	font-weight: 700; /* Linienstärke der Schrift */
 	line-height: 1em;
 	margin: 0 0 0.5625em 0;
 }
@@ -110,6 +113,8 @@ p {
 	Basiselemente im HTML-Dokument
 
 */
+
+/* Der Wrapper beinhaltet die Content-Elemente im Body, damit man z.B. nur an einer Stelle die Breite setzen muss */
 #wrapper {
 	width: 80vw;
 	align-self: center;
@@ -124,11 +129,13 @@ p {
 }
 
 .CenterHorizontal {
+	/* Elemente durch gleiche Margins links und rechts zentrieren */
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .noselect {
+	/* Damit kann das Burger-Icon nicht markiert werden */
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
@@ -142,16 +149,12 @@ p {
 	width: 100%;
 	height: auto;
 	
+	/* Wird für ein responsives Seitenverhältnis des Bannerbildes benötigt */
 	overflow: hidden;
 	object-fit: cover;
 
-	margin-left: auto;
-	margin-right: auto;
-
-	z-index: -1000;
-	/* filter: brightness(70%);  Reduzierung der Helligkeit des Backgrounds um 30%, 
-	damit Portrait und Heading darunter deutlicher sichtbar werden. -> Jetzt durch Blur gemacht*/
-	filter: blur(5px); /* Unschärfe-Effekt */
+	 /* Unschärfe-Effekt */
+	filter: blur(5px);
 	transition: filter 0.7s ease-in-out;
 }
 
@@ -168,6 +171,7 @@ p {
 }
 
 #banner:hover #MenuBackground {
+	/* Bild bei Hover schärfen */
 	filter: blur(0);
 }
 
@@ -207,39 +211,44 @@ p {
 }
 
 #navigation {
+	/* Navigationselemente rechts anordnen */
 	position: absolute;
 	top: 0;
 	right: 0;
+
 	line-height: 60px;
 	height: 100%;
 	width: 75%;
 }
 
 #navigation > ul {
-	list-style-type: none;
+	/* Ungeordnete Liste für Startseite, Person, Themen, Galerie */
+	list-style-type: none; /* Keine Listenpunkte */
 	float: right;
 }
 
 #navigation > ul > li {
-	display: inline-block;
+	display: inline-block; /* Listenelemente in einer Zeile anzeigen */
 	margin-right: 25px;
 	font-size: 1.2em;
-	letter-spacing: 1px;
+	letter-spacing: 1px; /* Abstand zwischen den Zeichen */
 }
 
 #navigation > ul > li > a {
 	color: white !important;
-	text-transform: uppercase;
+	text-transform: uppercase; /* Buchstaben in CAPS anzeigen */
 	text-decoration: none;
 	float: right;
 
+	/* Dauer der Animation */
 	-webkit-transition: 0.25s ease-in-out;
 	-moz-transition: 0.25s ease-in-out;
 	-o-transition: 0.25s ease-in-out;
 	transition: 0.25s ease-in-out;
 }
 
-#navigation > ul > li > a:hover{
+#navigation > ul > li > a:hover {
+	/* Elemente bewegen sich bei Hover nach oben */
 	-webkit-transform: translateY(-0.1em);
 	-moz-transform: translateY(-0.1em);
 	-o-transform: translateY(-0.1em);
@@ -249,7 +258,7 @@ p {
 
 /* Hamburgericon */
 #navigation label, #hamburger {
-	display: none; /* In der normalen Ansicht soll das Hamburgericon nicht angezeigt werden */
+	display: none; /* In der Desktopansicht soll das Hamburgericon nicht angezeigt werden */
 }
 
 /*
@@ -284,7 +293,7 @@ p {
 .column img {
 	vertical-align: middle;
 	width: 100%;
-	transition: transform .5s ease;	
+	transition: transform .5s ease;
 	overflow: hidden;
 }
 
@@ -326,32 +335,33 @@ p {
 	}
 
 	#navigation ul {
-		display: none;
+		display: none; /* Wichtig: Normalerweise wird in der mobilen Ansicht das Menü ausgeblendet */
 		background-color: #725ac1;
-		width: 300px;
+		width: 300px; /* Breite des erscheinenden Menüs */
 	}
 
 	#navigation ul li {
 		display: block;
 		margin: 0;
-		height: 60px;
-		border-top: 1px solid #242038;
+		height: 60px; /* Höhe der Menüelemente */
+		border-top: 1px solid #242038; /* Trennstrich zwischen den Elementen */
 	}
 
 	#navigation ul li a {
 		width: 300px;
 		text-align: center;
-		
 	}
 
 	#navigation > ul > li > a:hover{
+		/* Bei der mobilen Ansicht bewegen sich die Elemente bei Hover nach rechts */
 		-webkit-transform: translateX(1em);
 		-moz-transform: translateX(1em);
 		-o-transform: translateX(1em);
 		-ms-transform: translateX(1em);
 		transform: translateX(1em);
 	}
-
+	
+	/* Burgersymbol */
 	#navigation label {
 		display: block;
 		margin-left: 80%;
@@ -362,6 +372,7 @@ p {
 	}
 
 	#navigation input:checked ~ ul {
+		/* Wenn die Checkbox aktiviert wird (-> Burgericon angetippt), werden die Menüelemente untereinander angezeigt */
 		display: block;
 	}
 
