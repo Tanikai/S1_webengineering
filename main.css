@@ -278,8 +278,8 @@ p {
 }
   
 .column {
-	flex: 30%;
-	max-width: 30%;
+	flex: 50%;
+	max-width: 50%;
 	padding: 0 4px;
 	overflow: hidden;
 }
@@ -402,6 +402,11 @@ p {
 	#banner {
 		height: 50vh;
 		max-height: none;
+	}
+
+	.column {
+		flex: 100%;
+		max-width: 100%;
 	}
 }
 
