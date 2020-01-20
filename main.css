@@ -273,7 +273,7 @@ p {
 	padding: 0 4px;
 	overflow: hidden;
 	margin: auto;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 }
   
@@ -293,7 +293,7 @@ p {
 
 .galleryGraphicDiv {
 	overflow: hidden;
-	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 #IMGeugenG20 {
