@@ -31,6 +31,7 @@ html {
 body {
 	font-family: "Didact Gothic";
 	font-size: 16px;
+	background-color: #F7F2ED;
 }
 
 header {
@@ -125,7 +126,7 @@ p {
 
 #content {
 	width: 100%;
-	background-color: #F7F2ED;
+	background-color: #FFFFFF;
 	padding: 5%;
 }
 
@@ -242,11 +243,11 @@ p {
 
 #navigation > ul > li > a:hover {
 	/* Elemente bewegen sich bei Hover nach oben */
-	-webkit-transform: translateY(-0.1em);
-	-moz-transform: translateY(-0.1em);
-	-o-transform: translateY(-0.1em);
-	-ms-transform: translateY(-0.1em);
-	transform: translateY(-0.1em);
+	-webkit-transform: translateY(-0.25em);
+	-moz-transform: translateY(-0.25em);
+	-o-transform: translateY(-0.25em);
+	-ms-transform: translateY(-0.25em);
+	transform: translateY(-0.25em);
 }
 
 /* Hamburgericon */
