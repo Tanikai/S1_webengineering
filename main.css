@@ -110,6 +110,17 @@ p {
 	margin: 0 0 2.25em 0;
 }
 
+li {
+	font-size: 1.2em;
+	margin: 0 0 0.5em 0;
+}
+
+ul {
+	font-size: 1em;
+	margin-left: 20px;
+	margin-bottom: 35px;
+}
+
 /*
 
 	Basiselemente im HTML-Dokument
