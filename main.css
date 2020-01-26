@@ -159,6 +159,7 @@ ul {
 	/* Wird für ein responsives Seitenverhältnis benötigt */
 	overflow: hidden;
 	object-fit: cover;
+	height: 100%;
 }
 
 /* Banner mit Landschaft und Portrait */
@@ -288,7 +289,7 @@ ul {
 
 /*
 
-	Galerie
+	Galerie / Themen
 
 */
 .row {
@@ -301,6 +302,8 @@ ul {
 	justify-content: center;
 	z-index: 0;
 }
+
+
 
 .column {
 	flex: 50%;
@@ -315,6 +318,10 @@ ul {
 	width: 100%;
 	transition: transform .5s ease;
 	overflow: hidden;
+}
+
+.column.topic-img {
+	margin-bottom: 25px;
 }
 
 .galleryGraphicDiv {
