@@ -277,6 +277,7 @@ table {
 /* Hamburgericon */
 #navigation label, #hamburger {
 	display: none; /* In der Desktopansicht soll das Hamburgericon nicht angezeigt werden */
+	color: #FFFFFF;
 }
 
 /*
