@@ -303,8 +303,6 @@ ul {
 	z-index: 0;
 }
 
-
-
 .column {
 	flex: 50%;
 	max-width: 50%;
@@ -322,6 +320,7 @@ ul {
 
 .column.topic-img {
 	margin-bottom: 25px;
+	padding: 0 2.5%;
 }
 
 .galleryGraphicDiv {
