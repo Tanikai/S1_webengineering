@@ -74,6 +74,17 @@ footer a {
 	text-decoration: none; /* Strich unter dem Link ausblenden */
 }
 
+.fa { /*SocialMedia-Icons*/
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+
+.fa:hover {
+	opacity: 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: #242038;
 	font-weight: 700; /* Linienstärke der Schrift */
