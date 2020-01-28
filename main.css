@@ -91,6 +91,8 @@ footer a {
 .fa { /* Social Media-Icons */
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	opacity: 0.8;
 	
@@ -211,6 +213,10 @@ table {
 
 	 /* Unschärfe-Effekt */
 	filter: blur(5px);
+	-webkit-transition: filter 0.7s ease-in-out;
+	-moz-transition: filter 0.7s ease-in-out;
+	-o-transition: filter 0.7s ease-in-out;
+	-ms-transition: filter 0.7s ease-in-out;
 	transition: filter 0.7s ease-in-out;
 }
 
@@ -298,6 +304,7 @@ table {
 	-webkit-transition: 0.25s ease-in-out;
 	-moz-transition: 0.25s ease-in-out;
 	-o-transition: 0.25s ease-in-out;
+	-ms-transition: 0.25s ease-in-out;
 	transition: 0.25s ease-in-out;
 }
 
@@ -388,6 +395,10 @@ table {
 .column img {
 	vertical-align: middle;
 	width: 100%;
+	-webkit-transition: transform .5s ease;
+	-moz-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
 	transition: transform .5s ease;
 	overflow: hidden;
 }
@@ -402,8 +413,18 @@ table {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 8px;
+	
+	-webkit-transform-origin: 95% 50%;
+	-moz-transform-origin: 95% 50%;
+	-o-transform-origin: 95% 50%;
+	-ms-transform-origin: 95% 50%;
 	transform-origin: 95% 50%;
-  	transition: transform 1s, filter .5s ease-out;
+
+	-webkit-transition: transform 1s, filter .5s ease-out;
+	-moz-transition: transform 1s, filter .5s ease-out;
+	-o-transition: transform 1s, filter .5s ease-out;
+	-ms-transition: transform 1s, filter .5s ease-out;
+	transition: transform 1s, filter .5s ease-out;
 }
 
 .hoverTextDiv {
@@ -418,8 +439,10 @@ table {
 	color: #fff;
 	padding: 15px;
 	background: rgba(0, 0, 0, 0.4);
-	-moz-transition: all 0.4s ease-in-out 0s;
+
 	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-o-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
 }
@@ -430,17 +453,27 @@ table {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-moz-transform: translate(-50%, -50%);
+
 	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
 .galleryGraphicDiv:hover .galleryGraphic {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
 
 .galleryGraphicDiv:hover #IMGeugenG20 {
+	-webkit-transform: scale(5);
+	-moz-transform: scale(5);
+	-o-transform: scale(5);
+	-ms-transform: scale(5);
 	transform: scale(5);
 }
 
