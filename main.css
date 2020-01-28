@@ -191,13 +191,17 @@ table {
 	-moz-user-select: none; /* Old versions of Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-  }
+}
 
 .fill {
 	/* Wird für ein responsives Seitenverhältnis benötigt */
 	overflow: hidden;
 	object-fit: cover;
 	height: 100%;
+}
+
+.fill.right {
+	object-position: right; 
 }
 
 /* Banner mit Landschaft und Portrait */
@@ -357,6 +361,26 @@ table {
 	z-index: 0;
 }
 
+.row.paragraph {
+	padding: 0;
+	margin-bottom: 2.25em;
+}
+
+.row.paragraph .column {
+	padding: 0;
+}
+
+.row.paragraph p {
+	/* margin: 0; */
+}
+
+.row.paragraph img {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .column {
 	flex: 50%;
 	max-width: 50%;
@@ -370,11 +394,6 @@ table {
 	width: 100%;
 	transition: transform .5s ease;
 	overflow: hidden;
-}
-
-.column.topic-img {
-	margin-bottom: 25px;
-	padding: 0 2.5%;
 }
 
 .galleryGraphicDiv {
@@ -414,6 +433,19 @@ table {
 
 	#portrait h1 {
 		font-size: 3.75em;
+	}
+
+	.row.paragraph {
+		margin: 0;
+	}
+
+	.row.paragraph .column{
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.row.paragraph .column.image {
+		margin-bottom: 2.25em;
 	}
 }
  
