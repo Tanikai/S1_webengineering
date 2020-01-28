@@ -342,7 +342,8 @@ table {
 }
 
 #index a {
-	color: #242038 !important;
+	color: #725ac1 !important;
+	text-decoration: underline;
 }
 
 .row {
@@ -420,7 +421,8 @@ table {
 	#navigation ul {
 		display: none; /* Wichtig: Normalerweise wird in der mobilen Ansicht das Menü ausgeblendet */
 		background-color: #725ac1;
-		width: 300px; /* Breite des erscheinenden Menüs */
+		width: 100%;
+		max-width: 300px; /* Breite des erscheinenden Menüs */
 	}
 
 	#navigation ul li {
@@ -431,7 +433,8 @@ table {
 	}
 
 	#navigation ul li a {
-		width: 300px;
+		width: 100%;
+		max-width: 300px;
 		text-align: center;
 	}
 
