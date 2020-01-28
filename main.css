@@ -378,21 +378,59 @@ table {
 }
 
 .galleryGraphicDiv {
+	position: relative;
 	overflow: hidden;
 	margin-bottom: 8px;
 }
 
 #IMGeugenG20 {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 8px;
 	transform-origin: 95% 50%;
   	transition: transform 1s, filter .5s ease-out;
 }
 
-.galleryGraphic:hover {
+.hoverTextDiv {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.4);
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hoverText {
+	text-align: center;
+	font-size: 2em;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.galleryGraphicDiv:hover .galleryGraphic {
 	transform: scale(1.2);
 }
 
-#IMGeugenG20:hover {
+.galleryGraphicDiv:hover #IMGeugenG20 {
 	transform: scale(5);
+}
+
+.galleryGraphicDiv:hover .hoverTextDiv{
+	opacity: 1;
 }
 
 /*
