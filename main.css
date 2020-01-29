@@ -599,6 +599,11 @@ table {
 		flex: 100%;
 		max-width: 100%;
 	}
+
+	.row.paragraph img {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 /*
