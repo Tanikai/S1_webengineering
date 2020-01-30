@@ -77,14 +77,14 @@ footer div {
 
 footer p {
 	margin: 0 10px;
-	color: #545070;
+	color: lightgrey;
 	display: inline;
 	text-decoration: none;
 	font-size: 1em;
 }
 
 footer a {
-	color: #545070;
+	color: lightgrey;
 	display: inline;
 	text-decoration: none; /* Strich unter dem Link ausblenden */
 }
