@@ -167,6 +167,10 @@ table {
 	font-size: 1.2em;
 }
 
+td {
+	vertical-align: top;
+}
+
 /*
 
 	Basiselemente im HTML-Dokument
