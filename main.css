@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 html {
 	/* Dadurch hat die "Padding"-Eigenschaft keinen Einfluss auf die Gesamtgröße des Elements */
 	box-sizing: border-box;
-	/* Dadurch wird das Springen im Inhaltsverzeichnis "smooth" */
+
+	/* Dadurch wird das Springen im Inhaltsverzeichnis "smooth", funktioniert nicht in Safari */
 	scroll-behavior: smooth;
 }
 
@@ -51,7 +52,7 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	background-color: #725ac1; /* Zwischenhalter für Farbe: 0098D4 */
+	background-color: #725ac1;
 	height: 60px;
 	width: 100%;
 	z-index: 100;
@@ -88,7 +89,8 @@ footer a {
 	text-decoration: none; /* Strich unter dem Link ausblenden */
 }
 
-.fa { /* Social Media-Icons */
+/* Social Media-Icons */
+.fa {
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-o-transition: opacity 0.2s ease-in-out;
@@ -364,7 +366,6 @@ table {
 	padding: 0 4px;
 	overflow: hidden;
 	margin: auto;
-	/* align-items: center; */
 	justify-content: center;
 	z-index: 0;
 }
@@ -623,56 +624,3 @@ table {
 	50% {transform: scale(0.67);}
 	100% {transform: scale(1);}
 }
-
-@-webkit-keyframes zoomoutFull {
-	0% {
-		/* transform: scale(10); */
-		/* width: 100vw;
-		height: auto; */
-		/* margin-left: 20vw; */
-		/* position:relative; */
-		width: 100vw;
-		height: auto;
-		z-index: 10000;
-		/* transition: 2s all; */
-	}
-	/* 50% {transform: scale(2.5);} */
-	100% {
-		/* transform: scale(1);
-		margin-left: 0vw;
-		position:relative;
-		z-index: 10000; */
-		/* height: 100%;
-		width: auto; */
-		/* transition: 2s all; */
-		width: 100%;
-		height: auto;
-	}
-}
-
-@keyframes zoomoutFull {
-	0% {
-		/* transform: scale(10); */
-		/* margin-left: 20vw;
-		width: 100vw;
-		height: auto; */
-		/* position:relative; */
-		width: 100vw;
-		height: auto;
-		z-index: 10000;
-		/* transition: 2s all; */
-	}
-	/* 50% {transform: scale(2.5);} */
-	100% {
-		/* transform: scale(1);
-		margin-left: 0vw;
-		position:relative;
-		z-index: 10000; */
-		/* height: 100%;
-		width: auto; */
-		/* transition: 2s all; */
-		width: 100%;
-		height: auto;
-	}
-}
-
