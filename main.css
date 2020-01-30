@@ -187,6 +187,7 @@ table {
 
 .noselect {
 	/* Damit kann das Burger-Icon nicht markiert werden */
+	/* https://www.sitepoint.com/vendor-specific-properties/ */
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
