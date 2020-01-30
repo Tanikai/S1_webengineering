@@ -535,6 +535,8 @@ td {
 		margin: 0;
 		height: 60px; /* Höhe der Menüelemente */
 		border-top: 1px solid #242038; /* Trennstrich zwischen den Elementen */
+		width: 80%;
+		margin: 0 10%;
 	}
 
 	#navigation ul li a {
