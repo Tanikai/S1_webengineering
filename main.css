@@ -11,485 +11,485 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	/* Für alle Elemente zunächst margin, padding, border auf 0 setzen (da es einige Standardwerte gibt)
-	und die Schriftart für alle Elemente übernehmen */
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+    /* Für alle Elemente zunächst margin, padding, border auf 0 setzen (da es einige Standardwerte gibt)
+    und die Schriftart für alle Elemente übernehmen */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
 }
 
 html {
-	/* Dadurch hat die "Padding"-Eigenschaft keinen Einfluss auf die Gesamtgröße des Elements */
-	box-sizing: border-box;
+    /* Dadurch hat die "Padding"-Eigenschaft keinen Einfluss auf die Gesamtgröße des Elements */
+    box-sizing: border-box;
 
-	/* Dadurch wird das Springen im Inhaltsverzeichnis "smooth", funktioniert nicht in Safari */
-	scroll-behavior: smooth;
+    /* Dadurch wird das Springen im Inhaltsverzeichnis "smooth", funktioniert nicht in Safari */
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
-	/* border-box für alle Elemente übernehmen */
-	box-sizing: inherit;
+    /* border-box für alle Elemente übernehmen */
+    box-sizing: inherit;
 }
 
 a {
-	text-decoration: none; /* Strich unter dem Link ausblenden */
+    text-decoration: none; /* Strich unter dem Link ausblenden */
 }
 
 strong, b {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 body {
-	font-family: "Didact Gothic";
-	font-size: 16px;
-	background-color: #F7F2ED;
+    font-family: "Didact Gothic";
+    font-size: 16px;
+    background-color: #F7F2ED;
 }
 
 header {
-	/* Header immer oben anzeigen */
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	background-color: #725ac1;
-	height: 60px;
-	width: 100%;
-	z-index: 100;
+    /* Header immer oben anzeigen */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #725ac1;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
 }
 
 footer {
-	height: 120px;
-	width: 100%;
-	line-height: 60px;
-	background-color: #242038;
-	padding: 0 20px;
-	text-decoration: none;
-	font-size: 1em;
+    height: 120px;
+    width: 100%;
+    line-height: 60px;
+    background-color: #242038;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 footer div {
-	display: block;
-	height: 50%;
-	width: 100%;
-	text-align: center;
+    display: block;
+    height: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 footer p {
-	margin: 0 10px;
-	color: lightgrey;
-	display: inline;
-	text-decoration: none;
-	font-size: 1em;
+    margin: 0 10px;
+    color: lightgrey;
+    display: inline;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 footer a {
-	color: lightgrey;
-	display: inline;
-	text-decoration: none; /* Strich unter dem Link ausblenden */
+    color: lightgrey;
+    display: inline;
+    text-decoration: none; /* Strich unter dem Link ausblenden */
 }
 
 /* Social Media-Icons */
 .fa {
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-o-transition: opacity 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
-	opacity: 0.8;
-	
-	color: #ffffff;
-	width: 50px;
-	text-align: center;
-	text-decoration: none;
-	margin: 0 5px;
-	font-size: 1.75em !important;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.8;
+    
+    color: #ffffff;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.75em !important;
 }
 
 .fa:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #242038;
-	font-weight: 700; /* Linienstärke der Schrift */
-	line-height: 1em;
-	margin: 0 0 0.5625em 0;
+    color: #242038;
+    font-weight: 700; /* Linienstärke der Schrift */
+    line-height: 1em;
+    margin: 0 0 0.5625em 0;
 }
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		border: 0;
-		color: inherit;
-		text-decoration: none;
-	}
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        border: 0;
+        color: inherit;
+        text-decoration: none;
+    }
 
 h1 {
-	font-size: 3.5em;
+    font-size: 3.5em;
 }
 
 h2 {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 h3 {
-	font-size: 1.75em;
+    font-size: 1.75em;
 }
 
 h4 {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 
 h5 {
-	font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 h6 {
-	font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 p {
-	font-size: 1.2em;
-	margin: 0 0 2.25em 0;
+    font-size: 1.2em;
+    margin: 0 0 2.25em 0;
 }
 
 li {
-	font-size: 1.2em;
-	margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0;
 }
 
 ul {
-	font-size: 1em;
-	margin-left: 20px;
-	margin-bottom: 35px;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-bottom: 35px;
 }
 
 table {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 td {
-	vertical-align: top;
+    vertical-align: top;
 }
 
 /*
 
-	Basiselemente im HTML-Dokument
+    Basiselemente im HTML-Dokument
 
 */
 
 /* Der Wrapper beinhaltet die Content-Elemente im Body, damit man z.B. nur an einer Stelle die Breite setzen muss */
 #wrapper {
-	width: 80vw;
-	align-self: center;
-	margin-left: 10vw;
-	margin-right: auto;
+    width: 80vw;
+    align-self: center;
+    margin-left: 10vw;
+    margin-right: auto;
 }
 
 #content {
-	width: 100%;
-	background-color: #FFFFFF;
-	padding: 5%;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 5%;
 }
 
 .noselect {
-	/* Damit kann das Burger-Icon nicht markiert werden */
-	/* https://www.sitepoint.com/vendor-specific-properties/ */
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+    /* Damit kann das Burger-Icon nicht markiert werden */
+    /* https://www.sitepoint.com/vendor-specific-properties/ */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .fill {
-	/* Wird für ein responsives Seitenverhältnis benötigt */
-	overflow: hidden;
-	object-fit: cover;
-	height: 100%;
+    /* Wird für ein responsives Seitenverhältnis benötigt */
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
 }
 
 .fill.right {
-	object-position: right; 
+    object-position: right; 
 }
 
 /* Banner mit Landschaft und Portrait */
 #MenuBackground {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
-	 /* Unschärfe-Effekt */
-	filter: blur(5px);
-	-webkit-transition: filter 0.7s ease-in-out;
-	-moz-transition: filter 0.7s ease-in-out;
-	-o-transition: filter 0.7s ease-in-out;
-	-ms-transition: filter 0.7s ease-in-out;
-	transition: filter 0.7s ease-in-out;
+     /* Unschärfe-Effekt */
+    filter: blur(5px);
+    -webkit-transition: filter 0.7s ease-in-out;
+    -moz-transition: filter 0.7s ease-in-out;
+    -o-transition: filter 0.7s ease-in-out;
+    -ms-transition: filter 0.7s ease-in-out;
+    transition: filter 0.7s ease-in-out;
 }
 
 #banner {
-	position: relative;
-	width: 100%;
-	height: 60vh;
-	min-height: 450px;
-	max-height: 40vw;
-	display: flex;
-	overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 450px;
+    max-height: 40vw;
+    display: flex;
+    overflow: hidden;
 }
 
 #banner:hover #MenuBackground {
-	/* Bild bei Hover schärfen */
-	filter: blur(0);
+    /* Bild bei Hover schärfen */
+    filter: blur(0);
 }
 
 #portrait {
-	width: 100%;
-	height: 80%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	text-align: center;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
 
 #portrait h1 {
-	color: white;	
-	text-shadow: 3px 3px 10px #242038;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 5.5vw;
-	/*v
-	Das hier wäre die Umrandung	
-	-webkit-text-stroke-color: black;
-	-webkit-text-stroke-width: 2.00px;
-	*/
+    color: white;	
+    text-shadow: 3px 3px 10px #242038;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5.5vw;
+    /*v
+    Das hier wäre die Umrandung	
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+    */
 }
 
 #portrait img {
-	margin-top: 3%;
-	height: 75%;
-	max-height: 25vw;
-	border-radius: 50%;
+    margin-top: 3%;
+    height: 75%;
+    max-height: 25vw;
+    border-radius: 50%;
 }
 
 /* Navigationsleiste im Header */
 #logo {
-	height: 100%;
-	margin-left: 1%;	
+    height: 100%;
+    margin-left: 1%;	
 }
 
 #navigation {
-	/* Navigationselemente rechts anordnen */
-	position: absolute;
-	top: 0;
-	right: 0;
+    /* Navigationselemente rechts anordnen */
+    position: absolute;
+    top: 0;
+    right: 0;
 
-	line-height: 60px;
-	height: 100%;
-	width: 75%;
+    line-height: 60px;
+    height: 100%;
+    width: 75%;
 }
 
 #navigation > ul {
-	/* Ungeordnete Liste für Startseite, Person, Themen, Galerie */
-	list-style-type: none; /* Keine Listenpunkte */
-	float: right;
+    /* Ungeordnete Liste für Startseite, Person, Themen, Galerie */
+    list-style-type: none; /* Keine Listenpunkte */
+    float: right;
 }
 
 #navigation > ul > li {
-	display: inline-block; /* Listenelemente in einer Zeile anzeigen */
-	margin-right: 25px;
-	font-size: 1.2em;
-	letter-spacing: 1px; /* Abstand zwischen den Zeichen */
+    display: inline-block; /* Listenelemente in einer Zeile anzeigen */
+    margin-right: 25px;
+    font-size: 1.2em;
+    letter-spacing: 1px; /* Abstand zwischen den Zeichen */
 }
 
 #navigation > ul > li > a {
-	color: white !important;
-	text-transform: uppercase; /* Buchstaben in CAPS anzeigen */
-	text-decoration: none;
-	float: right;
+    color: white !important;
+    text-transform: uppercase; /* Buchstaben in CAPS anzeigen */
+    text-decoration: none;
+    float: right;
 
-	/* Dauer der Animation */
-	-webkit-transition: 0.25s ease-in-out;
-	-moz-transition: 0.25s ease-in-out;
-	-o-transition: 0.25s ease-in-out;
-	-ms-transition: 0.25s ease-in-out;
-	transition: 0.25s ease-in-out;
+    /* Dauer der Animation */
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 #navigation > ul > li > a:hover {
-	/* Elemente bewegen sich bei Hover nach oben */
-	-webkit-transform: translateY(-0.25em);
-	-moz-transform: translateY(-0.25em);
-	-o-transform: translateY(-0.25em);
-	-ms-transform: translateY(-0.25em);
-	transform: translateY(-0.25em);
+    /* Elemente bewegen sich bei Hover nach oben */
+    -webkit-transform: translateY(-0.25em);
+    -moz-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
 }
 
 /* Hamburgericon */
 #navigation label, #hamburger {
-	display: none; /* In der Desktopansicht soll das Hamburgericon nicht angezeigt werden */
-	color: #FFFFFF;
+    display: none; /* In der Desktopansicht soll das Hamburgericon nicht angezeigt werden */
+    color: #FFFFFF;
 }
 
 /*
 
-	Person
+    Person
 
 */
 .width-25 {
-	width:25%;
+    width:25%;
 }
 
 .table{
-	border-spacing: .6em;
-	margin-top: -1em;
+    border-spacing: .6em;
+    margin-top: -1em;
 }
 
 /*
 
-	Galerie / Themen
+    Galerie / Themen
 
 */
 .div-jmp {
-	position: relative;
-	top: -75px;
+    position: relative;
+    top: -75px;
 }
 
 #index {
-	padding-left: 25px;
-	font-size: 1.2em !important;
+    padding-left: 25px;
+    font-size: 1.2em !important;
 }
 
 #index a {
-	color: #725ac1 !important;
-	text-decoration: underline;
+    color: #725ac1 !important;
+    text-decoration: underline;
 }
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	overflow: hidden;
-	margin: auto;
-	justify-content: center;
-	z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    z-index: 0;
 }
 
 .row.paragraph {
-	padding: 0;
-	margin-bottom: 2.25em;
+    padding: 0;
+    margin-bottom: 2.25em;
 }
 
 .row.paragraph .column {
-	padding: 0;
+    padding: 0;
 }
 
 .row.paragraph img {
-	width: 90%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column {
-	flex: 50%;
-	max-width: 50%;
-	padding: 0 4px;
-	overflow: hidden;
-	z-index: 0;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    overflow: hidden;
+    z-index: 0;
 }
   
 .column img {
-	vertical-align: middle;
-	width: 100%;
-	-webkit-transition: transform .5s ease;
-	-moz-transition: transform .5s ease;
-	-o-transition: transform .5s ease;
-	-ms-transition: transform .5s ease;
-	transition: transform .5s ease;
-	overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
 }
 
 .galleryGraphicDiv {
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
 }
 
 #IMGeugenG20 {
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 8px;
-	
-	-webkit-transform-origin: 95% 50%;
-	-moz-transform-origin: 95% 50%;
-	-o-transform-origin: 95% 50%;
-	-ms-transform-origin: 95% 50%;
-	transform-origin: 95% 50%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+    
+    -webkit-transform-origin: 95% 50%;
+    -moz-transform-origin: 95% 50%;
+    -o-transform-origin: 95% 50%;
+    -ms-transform-origin: 95% 50%;
+    transform-origin: 95% 50%;
 
-	-webkit-transition: transform 1s, filter .5s ease-out;
-	-moz-transition: transform 1s, filter .5s ease-out;
-	-o-transition: transform 1s, filter .5s ease-out;
-	-ms-transition: transform 1s, filter .5s ease-out;
-	transition: transform 1s, filter .5s ease-out;
+    -webkit-transition: transform 1s, filter .5s ease-out;
+    -moz-transition: transform 1s, filter .5s ease-out;
+    -o-transition: transform 1s, filter .5s ease-out;
+    -ms-transition: transform 1s, filter .5s ease-out;
+    transition: transform 1s, filter .5s ease-out;
 }
 
 .hoverTextDiv {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	padding: 15px;
-	background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
 
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-o-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
 .hoverText {
-	text-align: center;
-	font-size: 2em;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .galleryGraphicDiv:hover .galleryGraphic {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .galleryGraphicDiv:hover #IMGeugenG20 {
-	-webkit-transform: scale(5);
-	-moz-transform: scale(5);
-	-o-transform: scale(5);
-	-ms-transform: scale(5);
-	transform: scale(5);
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -o-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
 }
 
 .galleryGraphicDiv:hover .hoverTextDiv{
-	opacity: 1;
+    opacity: 1;
 }
 
 /*
 
-	Breakpoints für verschiedene Fensterbreiten
+    Breakpoints für verschiedene Fensterbreiten
 
 */
 
@@ -498,135 +498,135 @@ td {
 }
 
 @media only screen and (max-width: 1080px) {
-	#portrait img {
-		margin-top: 3%;
-		max-height: 75vw;
-		max-width: 75vw;
-	}
+    #portrait img {
+        margin-top: 3%;
+        max-height: 75vw;
+        max-width: 75vw;
+    }
 
-	#portrait h1 {
-		font-size: 3.75em;
-	}
+    #portrait h1 {
+        font-size: 3.75em;
+    }
 
-	.row.paragraph {
-		margin: 0;
-	}
+    .row.paragraph {
+        margin: 0;
+    }
 
-	.row.paragraph .column{
-		flex: 100%;
-		max-width: 100%;
-	}
+    .row.paragraph .column{
+        flex: 100%;
+        max-width: 100%;
+    }
 
-	.row.paragraph .column.image {
-		margin-bottom: 2.25em;
-	}
+    .row.paragraph .column.image {
+        margin-bottom: 2.25em;
+    }
 }
  
 @media only screen and (max-width: 840px) {
-	#navigation ul {
-		display: none; /* Wichtig: Normalerweise wird in der mobilen Ansicht das Menü ausgeblendet */
-		background-color: #725ac1;
-		width: 100%;
-		max-width: 300px; /* Breite des erscheinenden Menüs */
-	}
+    #navigation ul {
+        display: none; /* Wichtig: Normalerweise wird in der mobilen Ansicht das Menü ausgeblendet */
+        background-color: #725ac1;
+        width: 100%;
+        max-width: 300px; /* Breite des erscheinenden Menüs */
+    }
 
-	#navigation ul li {
-		display: block;
-		margin: 0;
-		height: 60px; /* Höhe der Menüelemente */
-		border-top: 1px solid #242038; /* Trennstrich zwischen den Elementen */
-		width: 80%;
-		margin: 0 10%;
-	}
+    #navigation ul li {
+        display: block;
+        margin: 0;
+        height: 60px; /* Höhe der Menüelemente */
+        border-top: 1px solid #242038; /* Trennstrich zwischen den Elementen */
+        width: 80%;
+        margin: 0 10%;
+    }
 
-	#navigation ul li a {
-		width: 100%;
-		max-width: 300px;
-		text-align: center;
-	}
+    #navigation ul li a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
 
-	#navigation > ul > li > a:hover{
-		/* Bei der mobilen Ansicht bewegen sich die Elemente bei Hover nach rechts */
-		-webkit-transform: translateX(1em);
-		-moz-transform: translateX(1em);
-		-o-transform: translateX(1em);
-		-ms-transform: translateX(1em);
-		transform: translateX(1em);
-	}
-	
-	/* Burgersymbol */
-	#navigation label {
-		display: block;
-		margin-left: 80%;
-		width: 20%;
-		font-size: 1.5em;
-		font-style: normal;
-		text-align: center;
-	}
+    #navigation > ul > li > a:hover{
+        /* Bei der mobilen Ansicht bewegen sich die Elemente bei Hover nach rechts */
+        -webkit-transform: translateX(1em);
+        -moz-transform: translateX(1em);
+        -o-transform: translateX(1em);
+        -ms-transform: translateX(1em);
+        transform: translateX(1em);
+    }
+    
+    /* Burgersymbol */
+    #navigation label {
+        display: block;
+        margin-left: 80%;
+        width: 20%;
+        font-size: 1.5em;
+        font-style: normal;
+        text-align: center;
+    }
 
-	#navigation input:checked ~ ul {
-		/* Wenn die Checkbox aktiviert wird (-> Burgericon angetippt), werden die Menüelemente untereinander angezeigt */
-		display: block;
-	}
+    #navigation input:checked ~ ul {
+        /* Wenn die Checkbox aktiviert wird (-> Burgericon angetippt), werden die Menüelemente untereinander angezeigt */
+        display: block;
+    }
 
-	#portrait {
-		margin-top: 2vh;
-		width: 100%;
-		font-size: 25px;
-	}
+    #portrait {
+        margin-top: 2vh;
+        width: 100%;
+        font-size: 25px;
+    }
 
-	#portrait h1 {
-		font-size: 2.5em;
-	}
+    #portrait h1 {
+        font-size: 2.5em;
+    }
 
-	#wrapper {
-		width: 92vw;
-		margin-left: 4vw;
-	}
+    #wrapper {
+        width: 92vw;
+        margin-left: 4vw;
+    }
 
-	.column {
-		flex: 50%;
-		max-width: 50%;
-	}
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 736px) {
-	footer p {
-		display: block;
-		height: 50%;
-		margin: 0;
-		line-height: 0;
-	}
-	
-	.fa {
-		width: 10%;
-	}
-	
-	.column {
-		flex: 100%;
-		max-width: 100%;
-	}
+    footer p {
+        display: block;
+        height: 50%;
+        margin: 0;
+        line-height: 0;
+    }
+    
+    .fa {
+        width: 10%;
+    }
+    
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 
-	.row.paragraph img {
-		width: 100%;
-		margin: 0;
-	}
+    .row.paragraph img {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /*
 
-	Animationen
+    Animationen
 
 */
 @-webkit-keyframes zoomout {
-	0% {transform: scale(1);}
-	50% {transform: scale(0.67);}
-	100% {transform: scale(1);}
+    0% {transform: scale(1);}
+    50% {transform: scale(0.67);}
+    100% {transform: scale(1);}
 }
 
 @keyframes zoomout {
-	  0% {transform: scale(1);}
-	50% {transform: scale(0.67);}
-	100% {transform: scale(1);}
+      0% {transform: scale(1);}
+    50% {transform: scale(0.67);}
+    100% {transform: scale(1);}
 }
